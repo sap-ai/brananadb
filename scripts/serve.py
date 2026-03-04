@@ -17,7 +17,7 @@ server_socket.bind((SERVER_HOST, SERVER_PORT))
 server_socket.listen(1)
 print('Listening on port %s ...' % SERVER_PORT)
 while True:
-    p = open("db.txt")
+    p = open(fi)
     client_connection, client_address = server_socket.accept()
     request = client_connection.recv(1024).decode()
     headers = request.split('\n')
