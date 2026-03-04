@@ -8,3 +8,5 @@ try:
 except:
    SERVER_PORT = 8000
 l = f'http://{SERVER_HOST}:{SERVER_PORT}'
+def showdatabase():
+   l += '/sz'
