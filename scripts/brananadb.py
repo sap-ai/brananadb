@@ -8,5 +8,12 @@ try:
 except:
    SERVER_PORT = 8000
 l = f'http://{SERVER_HOST}:{SERVER_PORT}'
-def showdatabase():
-   l += '/sz'
+class writetodb:
+   def showdatabase():
+      l += '/sz'
+   def addtodatabase(a):
+      l += '/' + a
+def stringtolist(file, character):
+   f = open(file)
+   c = f.read()
+   return c.split(character)
