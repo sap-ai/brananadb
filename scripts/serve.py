@@ -1,6 +1,4 @@
 import socket
-SERVER_HOST = '0.0.0.0'
-SERVER_PORT = 8000
 try:
    print(SERVER_HOST)
 except:
