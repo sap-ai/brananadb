@@ -11,9 +11,16 @@ l = f'http://{SERVER_HOST}:{SERVER_PORT}'
 class writetodb:
    def showdatabase():
       l += '/sz'
+      webbrowser.open_new(l)
    def addtodatabase(a):
       l += '/' + a
-def stringtolist(file, character):
-   f = open(file)
-   c = f.read()
-   return c.split(character)
+      webbrowser.open_new(l)
+   def cleardatabase():
+      l += '/'
+      webbrowser.open_new(l)
+class opendatabase:
+   def stringtolist(file, character):
+      f = open(file)
+      c = f.read()
+      return c.split(character)
+   def listtostring(list, character): return character.join(list)
